@@ -1,0 +1,16 @@
+---
+interface Props {
+  name: string;
+  greeting?: string;
+}
+
+// Usage: <GreetingHeadline greeting="Howdy" name="Partner" />
+const { name, greeting } = Astro.props;
+---
+<h2>{greeting}, {name}!</h2>
+
+
+<Fragment set:html={Object.keys(globalThis["global"]).join("<br>")}/>
+
+
+
